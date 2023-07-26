@@ -30,6 +30,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -40,24 +41,18 @@ body * {
 /*container*/
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
 
 /*profile*/
 
-/*centralizando imagem mantendo a propriedade inline*/
 #profile {
   text-align: center;
   padding: 24px;
 }
-
-/*centralizando imagem transformando de inline para block
-#profile img {
-  display: block;
-}
-*/
 
 #profile img {
   width: 112px;
@@ -133,6 +128,7 @@ ul li a {
 }
 
 /*pseudo-selector*/
+
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
@@ -166,4 +162,15 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+/*media queries*/
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
