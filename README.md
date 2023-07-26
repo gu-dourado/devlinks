@@ -44,4 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Gustavo Dourado :wave:
+Feito com ♥ by Gustavo Dourado :wave: 
